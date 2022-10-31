@@ -70,8 +70,8 @@ const resolvers = {
                 parsedData.Response.Results[0].VehicleTypesForMakeIds;
 
               const carData = {
-                Make_ID: car.Make_ID,
-                Make_Name: car.Make_Name,
+                Make_ID: [car.Make_ID],
+                Make_Name: [car.Make_Name],
                 vehicleTypes: carCompleteData ? carCompleteData : [],
               };
               completeCarData.push(carData);

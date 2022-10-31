@@ -12,8 +12,8 @@ const typeDefs = gql`
   }
 
   type completeCarData {
-    Make_ID: String!
-    Make_Name: String!
+    Make_ID: [String]
+    Make_Name: [String]
     vehicleTypes: [vechiclePerMake]
   }
 

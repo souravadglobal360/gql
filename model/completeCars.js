@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const completeCars = new mongoose.Schema({
   Make_ID: {
-    type: String,
+    type: [String],
     require: true,
   },
   Make_Name: {
-    type: String,
+    type: [String],
     require: true,
   },
   vehicleTypes: [],
